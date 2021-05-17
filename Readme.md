@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Виталий Драгулин](https://up.htmlacademy.ru/htmlcss/31/user/1008501).
-* Наставник: `Неизвестно`.
+- Студент: [Виталий Драгулин](https://up.htmlacademy.ru/htmlcss/31/user/1008501).
+- Наставник: [Сергей Скубида](https://up.htmlacademy.ru/profession/frontender/11/htmlcss/user/1210299).
 
 ---
 
