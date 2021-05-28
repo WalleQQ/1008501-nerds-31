@@ -68,6 +68,8 @@ img {
 
 .site-navigation {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .site-navigation-item a:hover,
@@ -139,6 +141,8 @@ img {
 
 .services-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .services-item:nth-child(1) {
@@ -184,14 +188,20 @@ img {
 
 .about-us-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .about-us-info {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .about-us-info2 {
   list-style: none;
+  margin: 0;
+  padding: 0;
   /* background: url(../img/nerds-illustration.jpg) no-repeat 0 0; */
 }
 
@@ -232,6 +242,8 @@ img {
 /* start partners */
 .partners-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .partners-item {
@@ -264,7 +276,11 @@ img {
 }
 /* end contacts */
 /* start-footer-content */
-
+.social-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 .footer-content p:nth-child(1) {
   font-size: 36px;
   line-height: 36px;
