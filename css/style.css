@@ -23,7 +23,7 @@
   --special-focus-black: rgba(0, 0, 0, 0.3);
 }
 
-body {
+.page-body {
   min-width: 960px;
   margin: 0;
   padding: 0;
@@ -33,6 +33,11 @@ body {
   font-weight: 400;
   color: var(--basic-light-black);
   background-color: var(--basic-white);
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 a {
@@ -44,6 +49,15 @@ img {
   height: auto;
 }
 
+.page {
+  height: 100%;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 /* start main header */
 .main-header {
   background-color: var(--basic-grey);
@@ -54,10 +68,15 @@ img {
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-black);
+  display: grid;
+  grid-template-columns: 160px 1fr min-content;
 }
 
 .main-header-nav a {
   color: var(--basic-black);
+}
+
+.main-header-logo {
 }
 
 .main-header-logo:hover {
@@ -105,8 +124,16 @@ img {
 
 /* start headline */
 .headline {
-  background: url(../img/nerds-index-slide1.png) no-repeat 100% 0;
   background-color: var(--basic-grey);
+}
+
+.headline-container {
+  background: url(../img/nerds-index-slide1.png) no-repeat 100% 0;
+  width: 1140px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: grid;
+  justify-content: start;
 }
 
 .headline-title {
@@ -140,11 +167,15 @@ img {
 /* end headline */
 
 /* start services */
-
+.services {
+}
 .services-list {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 100px;
 }
 
 .services-item:nth-child(1) {
@@ -192,6 +223,9 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 149px;
 }
 
 .about-us-info {
@@ -246,6 +280,8 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
 }
 
 .partners-item {
@@ -258,6 +294,8 @@ img {
   opacity: 0.1;
 }
 /* start main-footer */
+.main-footer {
+}
 /* start contacts */
 .contacts h3 {
   font-size: 18px;
@@ -278,11 +316,18 @@ img {
 }
 /* end contacts */
 /* start-footer-content */
+.footer-social {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 139px;
+}
+
 .social-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 .footer-content p:nth-child(1) {
   font-size: 36px;
   line-height: 36px;
