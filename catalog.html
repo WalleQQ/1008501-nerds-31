@@ -17,26 +17,32 @@
   </head>
   <body class="page-body">
     <header class="main-header">
-      <nav class="main-header-nav">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="Nerds" />
-        </a>
-        <ul class="site-navigation">
-          <li class="site-navigation-item"><a href="blank.html">Студия</a></li>
-          <li class="site-navigation-item"><a href="blank.html">Клиенты</a></li>
-          <li class="site-navigation-item">
-            <a>Магазин</a>
-          </li>
-          <li class="site-navigation-item">
-            <a href="blank.html">Контакты</a>
-          </li>
-        </ul>
+      <div class="container">
+        <nav class="main-header-nav">
+          <a class="main-header-logo" href="index.html">
+            <img src="img/nerds-logo.svg" width="160" height="65" alt="Nerds" />
+          </a>
+          <ul class="site-navigation">
+            <li class="site-navigation-item">
+              <a href="blank.html">Студия</a>
+            </li>
+            <li class="site-navigation-item">
+              <a href="blank.html">Клиенты</a>
+            </li>
+            <li class="site-navigation-item">
+              <a>Магазин</a>
+            </li>
+            <li class="site-navigation-item">
+              <a href="blank.html">Контакты</a>
+            </li>
+          </ul>
 
-        <a class="cart" href="blank.html">Корзина</a>
-      </nav>
-      <h1 class="catalog-title">Магазин готовых шаблонов</h1>
+          <a class="cart" href="blank.html">Корзина</a>
+        </nav>
+        <h1 class="catalog-title">Магазин готовых шаблонов</h1>
+      </div>
     </header>
-    <main>
+    <main class="page-catalog container">
       <section class="catalog-filter">
         <h2 class="visually-hidden">Фильтры товаров</h2>
         <form action="https://echo.htmlacademy.ru/courses" method="post">
@@ -118,26 +124,30 @@
       </section>
       <section class="catalog-projects">
         <h2 class="visually-hidden">Проекты</h2>
-        <p class="catalog-projects-title">Сортировать:</p>
-        <ul class="catalog-projects-button-list">
-          <li class="catalog-projects-button-item">
-            <button class="catalog-projects-button" type="button" checked>
-              По цене
-            </button>
-          </li>
-          <li class="catalog-projects-item">
-            <button class="catalog-projects-button" type="button">
-              По типу
-            </button>
-          </li>
-          <li class="catalog-projects-item">
-            <button class="catalog-projects-button" type="button">
-              По названию
-            </button>
-          </li>
-        </ul>
-        <button type="button button-back"></button>
-        <button type="button button-next"></button>
+        <div class="catalog-sort">
+          <p class="catalog-projects-title">Сортировать:</p>
+          <ul class="catalog-projects-button-list">
+            <li class="catalog-projects-button-item">
+              <button class="catalog-projects-button" type="button" checked>
+                По цене
+              </button>
+            </li>
+            <li class="catalog-projects-item">
+              <button class="catalog-projects-button" type="button">
+                По типу
+              </button>
+            </li>
+            <li class="catalog-projects-item">
+              <button class="catalog-projects-button" type="button">
+                По названию
+              </button>
+            </li>
+          </ul>
+          <div class="catalog-sort-button">
+            <button type="button button-back"></button>
+            <button type="button button-next"></button>
+          </div>
+        </div>
         <ul class="catalog-projects-list">
           <li class="catalog-projects-item">
             <h3 class="visually-hidden">Sedona</h3>
@@ -212,15 +222,17 @@
     </main>
     <footer class="main-footer">
       <section class="contacts">
-        <h3>NЁRDS DESIGN STUDIO</h3>
-        <address>наб. Реки Карповки, 5 лит П, Санкт-Петербург</address>
-        <a class="contacts-phone" href="tel:+78005558626">+7 800 555-86-28</a>
+        <div class="container">
+          <h3>NЁRDS DESIGN STUDIO</h3>
+          <address>наб. Реки Карповки, 5 лит П, Санкт-Петербург</address>
+          <a class="contacts-phone" href="tel:+78005558626">+7 800 555-86-28</a>
 
-        <button class="button send-message-button" type="button">
-          Напишите нам
-        </button>
+          <button class="button send-message-button" type="button">
+            Напишите нам
+          </button>
+        </div>
       </section>
-      <section class="footer-social">
+      <section class="footer-social container">
         <h3 class="visually-hidden">Социальные сети</h3>
         <ul class="social-list">
           <li class="social-item">
