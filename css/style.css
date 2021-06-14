@@ -464,6 +464,11 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+}
+
+.catalog-sort-button {
+  display: flex;
 }
 
 .catalog-projects-button {
@@ -499,12 +504,25 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 759px;
+}
+
+.catalog-projects-item:not(:nth-child(2n)) {
+  margin-right: 40px;
 }
 
 .page-number-list {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+}
+
+.page-number-item:not(:last-child) {
+  margin-right: 11px;
 }
 
 .page-number-item a {
