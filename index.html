@@ -36,8 +36,9 @@
               <a href="blank.html">Контакты</a>
             </li>
           </ul>
-
-          <a class="cart" href="blank.html">Корзина</a>
+          <div class="cart">
+            <a class="link-cart" href="blank.html">Корзина</a>
+          </div>
         </nav>
       </div>
     </header>
@@ -55,9 +56,21 @@
           </p>
           <a class="button" href="#">Узнать больше</a>
           <!-- background-image -->
-          <button type="button" />
-          <button type="button" />
-          <button type="button" />
+          <button
+            type="button"
+            class="slider-button1 slider-button-current"
+            aria-label="Первый слайдер"
+          />
+          <button
+            type="button"
+            class="slider-button2"
+            aria-label="Второй слайдер"
+          />
+          <button
+            type="button"
+            class="slider-button3"
+            aria-label="Третий слайдер"
+          />
         </div>
       </section>
       <div class="container">
@@ -94,7 +107,7 @@
           <ul class="about-us-list">
             <li class="about-us-item">
               <h3>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
-              <p>
+              <p class="about-us-content0">
                 Исповедуем принципы минимализма и чистоты. Ставим математический
                 расчет превыше креатива. Работаем не покладая рук, как роботы.
               </p>
@@ -111,24 +124,25 @@
               </ul>
             </li>
             <li class="about-us-item">
-              <!-- Цветное изображение Nerds -->
-              <p class="about-us-content2">
-                с 2004 года Любим точность во всем:
-              </p>
-              <ul class="about-us-info2">
-                <li class="about-us-info2-item">
-                  <p>146<span>%</span></p>
-                  <p>Уровень самоотдачи</p>
-                </li>
-                <li class="about-us-info2-item">
-                  <p>100<span>%</span></p>
-                  <p>Соблюдение сроков</p>
-                </li>
-                <li class="about-us-info2-item">
-                  <p>50<span>%</span></p>
-                  <p>Минимальная предоплата</p>
-                </li>
-              </ul>
+              <div class="about-us-content2-wrapper">
+                <p class="about-us-content2">
+                  с 2004 года Любим точность во всем:
+                </p>
+                <ul class="about-us-info2">
+                  <li class="about-us-info2-item">
+                    <p>146<span>%</span></p>
+                    <p>Уровень самоотдачи</p>
+                  </li>
+                  <li class="about-us-info2-item">
+                    <p>100<span>%</span></p>
+                    <p>Соблюдение сроков</p>
+                  </li>
+                  <li class="about-us-info2-item">
+                    <p>50<span>%</span></p>
+                    <p>Минимальная предоплата</p>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </section>
