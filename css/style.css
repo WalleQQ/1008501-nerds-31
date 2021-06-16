@@ -62,7 +62,7 @@ img {
 }
 
 .container {
-  width: 1140px;
+  width: 1160px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -72,17 +72,12 @@ img {
 }
 
 .main-header .container {
-  margin-top: 48.98px;
 }
 
 .main-header-nav {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: var(--basic-black);
   display: grid;
   grid-template-columns: 160px 1fr min-content;
+  padding-top: 48.98px;
 }
 
 .main-header-nav a {
@@ -101,12 +96,22 @@ img {
   opacity: 0.3;
 }
 
+.site-navigation,
+.link-cart {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
 .site-navigation {
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 437px;
+  width: 450px;
   margin-left: 202px;
+  outline: 1px solid red;
 
   display: flex;
   justify-content: center;
@@ -118,6 +123,7 @@ img {
 .cart a {
   display: block;
   padding-top: 26.02px;
+  padding-bottom: 9px;
 }
 
 .cart {
@@ -171,18 +177,11 @@ img {
 
 .headline-container {
   background: url(../img/nerds-index-slide1.png) no-repeat top right;
-  width: 1140px;
+  width: 1160px;
   margin: 0 auto;
   padding: 0 10px;
-  display: grid;
-  justify-content: start;
   position: relative;
   margin-bottom: 80px;
-}
-
-.headline-container .button,
-.headline-container .slider-button {
-  justify-self: start;
 }
 
 .headline-title {
@@ -191,7 +190,7 @@ img {
   line-height: 55px;
   color: var(--basic-black);
   margin: 0;
-  padding: 0;
+
   padding-top: 78px;
   margin-bottom: 25px;
 }
@@ -218,16 +217,16 @@ img {
   border: none;
 }
 .slider-button1 {
-  top: 317px;
-  left: 536px;
+  top: 325px;
+  left: 561px;
 }
 .slider-button2 {
-  top: 317px;
-  left: 571px;
+  top: 325px;
+  left: 596px;
 }
 .slider-button3 {
-  top: 317px;
-  left: 606px;
+  top: 325px;
+  left: 632px;
 }
 .slider-button-current::before {
   content: "";
@@ -267,15 +266,16 @@ img {
 
 /* start services */
 .services {
-  border-bottom: 2px solid var(--basic-grey);
 }
 .services-list {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 300px 300px 300px;
   column-gap: 100px;
+  border-bottom: 2px solid var(--basic-grey);
+  margin-bottom: 39px;
 }
 
 .services-item {
@@ -337,7 +337,6 @@ img {
 
 /* start about-us */
 .about-us {
-  border-bottom: 2px solid var(--basic-grey);
 }
 
 .about-us-list {
@@ -347,7 +346,7 @@ img {
   display: grid;
   grid-template-columns: auto auto;
   column-gap: 149px;
-  margin-bottom: 75px;
+  border-bottom: 2px solid var(--basic-grey);
 }
 
 .about-us-info {
@@ -393,17 +392,20 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 290px;
+  width: 374px;
   display: flex;
   justify-content: flex-start;
-  /* background: url(../img/nerds-illustration.jpg) no-repeat 0 0; */
+  margin-bottom: 75px;
 }
 
-.about-us-info2-item:nth-child(1) {
+.about-us-info2-item:nth-child(1) span:nth-child(1) {
   margin-right: 22px;
 }
-.about-us-info2-item:nth-child(2) {
+.about-us-info2-item:nth-child(2) span:nth-child(2) {
   margin-right: 20px;
+}
+.about-us-info2-item:nth-child(3) span:nth-child(3) {
+  margin-right: 0;
 }
 
 .about-us-item h3 {
@@ -412,7 +414,7 @@ img {
   line-height: 45px;
   color: var(--basic-black);
   margin: 0;
-  margin-top: 73px;
+  padding-top: 34px;
   margin-bottom: 32px;
 }
 .about-us-content0 {
@@ -426,9 +428,8 @@ img {
 }
 
 .about-us-content2-wrapper {
-  margin-top: 39px;
   width: 360px;
-  padding-top: 208px;
+  padding-top: 245px;
   background: url(../img/nerds-illustration.jpg) no-repeat top center;
 }
 
@@ -439,7 +440,6 @@ img {
   text-transform: uppercase;
   padding: 0 15px;
   margin-bottom: 31px;
-  margin-top: 37px;
 }
 
 .about-us-info2-item p:nth-child(1) {
@@ -465,13 +465,17 @@ img {
 /* end about-us */
 
 /* start partners */
-
+.partners {
+  border-bottom: 2px solid var(--basic-grey);
+  margin-bottom: 80px;
+}
 .partners-list {
   list-style: none;
   margin: 0;
   padding: 48px 42px 46px 32px;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   background-image: url(../img/decor.png), url(../img/decor2.png),
     url(../img/decor3.png);
 
