@@ -219,7 +219,7 @@ img {
 }
 .slider-button2 {
   top: 309px;
-  left: 581;
+  left: 581px;
 }
 .slider-button3 {
   top: 309px;
@@ -608,6 +608,15 @@ img {
 
 .social-item:not(:nth-child(3n)) {
   margin-right: 9px;
+}
+
+.social-item a:hover {
+  background: linear-gradient(0deg, #e74246, #e74246), #ffffff;
+}
+.social-item a:active {
+  background: linear-gradient(0deg, #d7373b, #d7373b), #ffffff;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  fill-opacity: 0.3;
 }
 
 .footer-content p:nth-child(1) {
