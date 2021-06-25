@@ -89,11 +89,11 @@ img {
   width: 160px;
 }
 
-.main-header-logo:hover {
+.main-header-logo[href]:hover {
   opacity: 0.7;
 }
 
-.main-header-logo:active {
+.main-header-logo[href]:active {
   opacity: 0.3;
 }
 
@@ -184,18 +184,10 @@ img {
   list-style: none;
   position: relative;
 }
-.headline-slider1 {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-}
+
+.headline-slider1,
 .headline-slider2,
 .headline-slider3 {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   display: flex;
   justify-content: flex-end;
 }
@@ -206,8 +198,6 @@ img {
   line-height: 55px;
   color: var(--basic-black);
   margin: 0;
-  z-index: 100;
-
   padding-top: 71px;
   margin-bottom: 25px;
 }
@@ -222,23 +212,21 @@ img {
   padding: 17px 54px 15px 54px;
   margin-bottom: 80px;
 }
-.slide1-img img {
+.slide-img img {
   margin-top: -8px;
   margin-bottom: -7px;
 }
-
-.headline-content2,
-.headline-content3 {
+.headline-content {
   position: absolute;
   left: 0;
 }
-.headline-content2 .headline-title,
-.headline-content3 .headline-title {
+
+.headline-content .headline-title {
   margin: 0;
   margin-bottom: 37px;
 }
-.headline-content2 .headline-item,
-.headline-content3 .headline-item {
+
+.headline-content .headline-item {
   margin: 0;
   margin-bottom: 27px;
 }
@@ -560,9 +548,17 @@ img {
 
 /* start contacts */
 .contacts {
-  padding: 54px;
   position: relative;
+  background: url(../img/map.png) no-repeat;
+  background-size: 100%;
+  height: 416px;
 }
+.map-marker {
+  position: absolute;
+  top: 17%;
+  right: 362px;
+}
+
 iframe {
   width: 100%;
   border: none;
@@ -614,6 +610,9 @@ iframe {
   grid-template-columns: auto 1fr;
   column-gap: 139px;
   margin-top: 62px;
+}
+.inner-page .footer-social {
+  margin-top: 66px;
 }
 
 .social-list {
@@ -691,10 +690,10 @@ iframe {
 }
 
 .page-catalog {
-  min-height: 100%;
+  /* min-height: 100%; */
   display: grid;
   grid-template-columns: 260px 1fr;
-  grid-template-rows: min-content 1fr min-content;
+  /* grid-template-rows: min-content 1fr min-content; */
   align-content: start;
 }
 .catalog-filter {
@@ -934,7 +933,7 @@ iframe {
   color: var(--basic-black);
   margin: 0;
   margin-bottom: 48px;
-  margin-right: 40px;
+  margin-right: 225px;
 }
 
 .catalog-projects-button-list {
@@ -942,21 +941,17 @@ iframe {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  width: 500px;
 }
 
 .catalog-projects-button-item:not(:last-child) {
-  margin-right: 15px;
+  margin-right: 25px;
 }
 
 .catalog-sort-button {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-
-  margin-left: 33px;
+  width: 40px;
 }
 
 .catalog-projects-button {
@@ -1006,21 +1001,31 @@ iframe {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  width: 759px;
+  width: 760px;
   position: relative;
 }
 
 .catalog-projects-item:not(:nth-child(2n)) {
-  margin-right: 40px;
+  margin-right: 38px;
 }
 .catalog-projects-item:not(:last-child) {
-  margin-bottom: 22px;
+  margin-bottom: 31px;
 }
 
 .catalog-projects-item {
   position: relative;
+  margin: 0;
+  padding: 0;
   padding-top: 40px;
-  margin-bottom: 64px;
+  margin-bottom: 72px;
+  height: 578px;
+  width: 360px;
+  display: flex;
+  justify-content: center;
+}
+
+.catalog-projects-item img {
+  border-radius: 0 0 5px 5px;
 }
 
 .catalog-projects-item::before {
@@ -1034,6 +1039,9 @@ iframe {
   opacity: 0.12;
 }
 
+.catalog-projects-item img:hover {
+  filter: drop-shadow(0px 6px 15px rgba(0, 0, 0, 0.25));
+}
 .catalog-projects-item:hover::before {
   opacity: 1;
 }
@@ -1101,18 +1109,21 @@ iframe {
   display: none;
   bottom: 0;
   position: absolute;
-  text-align: center;
   background-color: var(--basic-grey);
-  width: 359px;
-  padding-top: 26px;
-  padding-bottom: 44px;
+  width: 255px;
+  border-radius: 0 0 5px 5px;
+  padding: 26px 53px 44px 52px;
+  text-align: center;
 }
 .modal-project h3 {
+  margin: 0;
+  padding: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-black);
+  margin-bottom: 12px;
 }
 .modal-project h3:hover {
   color: var(--basic-red);
@@ -1123,17 +1134,18 @@ iframe {
 }
 
 .modal-project p {
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-contacts-grey);
+  margin-bottom: 32px;
 }
 .modal-project .button {
   border: none;
   padding: 17px 72px 15px 72px;
 }
-.project-sedona:hover .modal-sedona,
-.project-pink:hover .modal-pink,
-.project-kvast:hover .modal-kvast {
+.catalog-projects-item:hover .modal-project {
   display: block;
 }
 /* end catalog-projects */
@@ -1198,7 +1210,7 @@ iframe {
 
 .name,
 .email {
-  padding-right: 280px;
+  width: 360px;
 }
 
 .input-name input,
