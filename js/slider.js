@@ -8,7 +8,7 @@ var openSliderThreeButton = document.querySelector(".slider-button3");
 openSliderOneButton.addEventListener("click", function () {
   slider1.classList.remove("visually-hidden");
   openSliderOneButton.classList.add("slider-button-current");
-  -slider2.classList.add("visually-hidden");
+  slider2.classList.add("visually-hidden");
   openSliderTwoButton.classList.remove("slider-button-current");
   slider3.classList.add("visually-hidden");
   openSliderThreeButton.classList.remove("slider-button-current");

@@ -185,9 +185,7 @@ img {
   position: relative;
 }
 
-.headline-slider1,
-.headline-slider2,
-.headline-slider3 {
+.headline-slider-item {
   display: flex;
   justify-content: flex-end;
 }
@@ -1173,8 +1171,9 @@ iframe {
   color: var(--basic-dark-grey);
   position: fixed;
   bottom: 30px;
-  left: 240px;
+  left: 50%;
   z-index: 3;
+  transform: translateX(-50%);
 }
 .modal--show {
   display: block;
